@@ -30,7 +30,7 @@ export const tvApi = {
     api.get(`tv/${id}`, {
       params: { append_to_response: "videos" },
     }),
-  search: ({ term }) =>
+  search: (term) =>
     api.get("search/tv", {
       params: { query: encodeURIComponent(term) },
     }),
